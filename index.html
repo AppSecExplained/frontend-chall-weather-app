@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		/>
+		<style>
+			.weather-widget {
+				background: linear-gradient(to bottom, #008cff, #691eff);
+				border-radius: 1.5em;
+				padding: 2em 1.5em;
+				color: white;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				max-width: 400px;
+				margin: auto;
+			}
+			.input-group {
+				padding: 0 1.5em;
+			}
+			.btn-search {
+				background-color: #fff;
+				border-radius: 0 20px 20px 0;
+				border-color: #fff;
+				font-size: 2em;
+				width: 2.5em;
+			}
+			.search-input {
+				border-radius: 20px 0 0 20px;
+				font-size: 2em;
+				border-color: #fff;
+			}
+			.weather-icon {
+				font-size: 48px;
+			}
+			.temperature {
+				font-size: 48px;
+			}
+			.location {
+				font-size: 24px;
+			}
+			.info {
+				font-size: 18px;
+			}
+			.icon {
+				width: 100px;
+				height: 100px;
+			}
+			.footer {
+				text-align: center;
+				color: #ccc;
+			}
+			.footer p a {
+				color: #888;
+			}
+			a {
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container mt-5">
+			<div class="weather-widget">
+				<!-- Search Bar Row -->
+				<div class="row mb-4">
+					<div class="input-group">
+						<input
+							type="text"
+							class="form-control search-input"
+							placeholder="London"
+							aria-label="Search"
+						/>
+						<div class="input-group-append">
+							<button
+								class="btn btn-outline-secondary btn-search"
+								type="button"
+							>
+								<i class="fa fa-search"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Weather Icon Row -->
+				<div class="row justify-content-center mb-2">
+					<div class="col text-center">
+						<img
+							src="assets/images/001-sun.png"
+							class="icon weather-icon"
+							alt="Icon"
+						/>
+					</div>
+				</div>
+				<!-- Temperature and Location Row -->
+				<div class="row justify-content-center mb-4">
+					<div class="col text-center">
+						<div class="temperature">
+							<span id="info-temperature">--°C</span>
+						</div>
+						<div class="location">
+							<span id="info-location"
+								>Search for a city<br />London/Berlin/Tokyo</span
+							>
+						</div>
+					</div>
+				</div>
+				<!-- Humidity and Wind Speed Row -->
+				<div class="row mb-3">
+					<div class="col-6 text-center">
+						<div class="info">
+							Humidity<br /><span id="info-humidity">---</span>
+						</div>
+					</div>
+					<div class="col-6 text-center">
+						<div class="info">
+							Wind Speed<br /><span id="info-wind">---</span>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-3">
+					<div class="col-6 text-center">
+						<div class="info">
+							Chance of Rain<br /><span id="info-rain">---</span>
+						</div>
+					</div>
+					<div class="col-6 text-center">
+						<div class="info">
+							Forecast<br /><span id="info-forecast">---</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col text-center">
+						<div class="info">
+							<a href="#" id="back-link"
+								>&lt; Back to
+								<span id="info-previous">Previous City</span></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-5 footer">
+			<p>
+				If you liked this challenge, feel free to connect<br /><a
+					href="https://linktr.ee/appsecexplained"
+					target="_blank"
+					>https://linktr.ee/appsecexplained</a
+				>
+			</p>
+			<p>
+				You're welcome to use and modify this app as you see fit,<br />but
+				please credit me if you do.
+			</p>
+		</div>
+
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/weather.js"></script>
+	</body>
+</html>
