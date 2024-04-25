@@ -12,3 +12,11 @@ A simple CTF challenge to test your frontend code review skills.
 
 - JavaScript
 - Code review
+
+# Setup
+
+1. Save the files
+2. Run `python3 -m http.server 80` from the file directory
+3. Browse to http://localhost
+
+Solution will be released next week :)
